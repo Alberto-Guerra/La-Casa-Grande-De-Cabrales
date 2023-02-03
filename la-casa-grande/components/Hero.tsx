@@ -13,10 +13,8 @@ export default function WithBackgroundImage() {
       fontFamily={"Lato"}
       w={"full"}
       h={"100vh"}
-      background={
-        "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/p/AF1QipOLbwxwXIhuqsKAO9mKMl2opWc457W3yFN-UAyk=s680-w680-h510');"
-      }
-      backgroundSize={"cover"}
+      // bgImage={"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://cdn1.dotesports.com/wp-content/uploads/2022/10/11161353/FUWNu5_UUAAhxkD.jpg')"}
+      bgImage={"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('')"}
       backgroundPosition={"center center"}
     >
       <VStack
