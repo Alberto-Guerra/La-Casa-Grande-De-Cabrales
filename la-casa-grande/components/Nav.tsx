@@ -26,7 +26,9 @@ export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box 
+    position={"sticky"}
+    top={"0"}>
       <Flex
         bg={useColorModeValue("#F2F2F2", "gray.800")}
         minH={"60px"}
@@ -37,7 +39,8 @@ export default function WithSubnavigation() {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
         justify={"center"}
-
+        boxShadow={" 0px 3px 3px 0px rgba(0, 0, 0, 0.3)"}
+        
       >
         <Flex flex={{ base: 1 }} justify={"space-between"} align ={"baseline"}
         >

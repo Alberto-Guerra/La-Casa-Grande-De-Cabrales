@@ -16,8 +16,10 @@ export default function Info() {
       <Image
         src="https://img.staticmb.com/mbcontent//images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
         alt="Foto de la casa"
-        maxWidth={{base: "80%", xl: "50%"}}
+        width={{ base: "110%", md: "80%" }}
+        minWidth={"50%"}
         alignSelf={"center"}
+        boxShadow={" 0px 6px 6px 0px rgba(0, 0, 0, 0.5)"}
       />
       <Box fontSize={{xl: "1em", '2xl' : "1.3em"}}>
         <Text 
