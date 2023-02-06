@@ -5,6 +5,8 @@ import {
   Image,
 } from "@chakra-ui/react";
 
+import infoImage from "../public/images/homepage3.jpeg";
+
 export default function Info() {
   return (
     <Flex
@@ -14,7 +16,7 @@ export default function Info() {
     direction={{base: "column", xl: "row"}}
     >
       <Image
-        src="https://img.staticmb.com/mbcontent//images/uploads/2022/12/Most-Beautiful-House-in-the-World.jpg"
+        src={infoImage.src}
         alt="Foto de la casa"
         width={{ base: "110%", md: "80%" }}
         minWidth={"50%"}

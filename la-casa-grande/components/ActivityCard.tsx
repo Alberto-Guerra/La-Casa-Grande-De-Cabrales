@@ -3,7 +3,7 @@ import Head from "next/head";
 import { start } from "repl";
 import internal from "stream";
 
-interface HouseInfo {
+interface CardInfo {
   name: string;
 
   description: string;
@@ -18,9 +18,11 @@ export default function ActivityCard({
   description,
   image,
   link,
-}: HouseInfo) {
+}: CardInfo) {
   return (
     <Stack
+      as={"a"}
+      href={link}
       direction={"column"}
       height={"500px"}
       width={{ base: "110%", md: "80%" }}

@@ -22,13 +22,18 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 
+import NextLink from 'next/link'
+
+
+
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Box 
     position={"sticky"}
-    top={"0"}>
+    top={"0"}
+    zIndex={99}>
       <Flex
         bg={useColorModeValue("#F2F2F2", "gray.800")}
         minH={"60px"}
@@ -44,6 +49,7 @@ export default function WithSubnavigation() {
       >
         <Flex flex={{ base: 1 }} justify={"space-between"} align ={"baseline"}
         >
+          <Link as={NextLink} href={"/"}>
           <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily="Lusitana"
@@ -54,14 +60,14 @@ export default function WithSubnavigation() {
           >
             LA CASA GRANDE DE CABRALES
           </Text>
-
-          <Flex display={{ base: "none", md: "flex" }}>
+          </Link>
+          <Flex display={{ base: "none", lg: "flex" }}>
             <DesktopNav />
           </Flex>
         </Flex>
         <Flex
 
-          display={{ base: "flex", md: "none" }}
+          display={{ base: "flex", lg: "none" }}
         >
           <IconButton
             onClick={onToggle}
@@ -94,7 +100,7 @@ const DesktopNav = () => {
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
-
+                as={NextLink}
                 rounded={"full"}
                 fontFamily="Lato"
                 fontWeight="extrabold"
@@ -252,11 +258,11 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Entorno",
-    href: "#",
+    href: "/entorno",
   },
   {
     label: "Actividades",
-    href: "#",
+    href: "/actividades",
   },
   {
     label: "Reservar",

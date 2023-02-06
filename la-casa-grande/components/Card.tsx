@@ -17,6 +17,8 @@ interface HouseInfo {
 export default function Card({ name, price, people, image, link }: HouseInfo) {
   return (
     <Flex
+      as={"a"}
+      href={link}
       direction={"column"}
       minHeight={"400px"}
       width={{ base: "110%", md: "80%" }}

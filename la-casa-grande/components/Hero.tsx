@@ -7,14 +7,18 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 
+import fotocasa from '../public/images/fotocasa.png';
+
 export default function WithBackgroundImage() {
   return (
     <Flex
       fontFamily={"Lato"}
       w={"full"}
       h={"100vh"}
-      //bgImage={"'https://cdn1.dotesports.com/wp-content/uploads/2022/10/11161353/FUWNu5_UUAAhxkD.jpg'"}
-      bgImage={"linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('')"}
+      bgImage={
+        `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${fotocasa.src}')`
+      }
+    
       backgroundSize={"cover"}
       backgroundPosition={"center center"}
     >
