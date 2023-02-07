@@ -41,7 +41,7 @@ export default function Home() {
             CASAS RURALES
           </Text>
           <Flex
-            padding={"20"}
+            padding={"5"}
             paddingTop={"10"}
             gap={"20"}
             alignItems={{ base: "center", xl: "start" }}
@@ -72,11 +72,12 @@ export default function Home() {
             fontFamily="Lato"
             fontWeight={"extrabold"}
             fontSize={"2em"}
+            marginTop={"20px"}
           >
             QUÉ HACER
           </Text>
           <Flex
-            padding={"20"}
+            padding={"5"}
             paddingTop={"10"}
             gap={"20"}
             alignItems={{ base: "center", xl: "start" }}

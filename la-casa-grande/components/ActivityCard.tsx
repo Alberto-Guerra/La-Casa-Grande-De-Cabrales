@@ -25,7 +25,7 @@ export default function ActivityCard({
       href={link}
       direction={"column"}
       height={"500px"}
-      width={{ base: "110%", md: "80%" }}
+      width={{ base: "100%", md: "80%" }}
       minWidth={"40%"}
       color={"#192E23"}
       alignItems={"center"}

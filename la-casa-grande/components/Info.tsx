@@ -10,8 +10,9 @@ import infoImage from "../public/images/homepage3.jpeg";
 export default function Info() {
   return (
     <Flex
-    padding={"20"}
-    gap={"20"}
+    marginY={"50px"}
+    paddingX={"5"}
+    gap={"50px"}
     alignItems={{base: "center", xl: "start"}}
     direction={{base: "column", xl: "row"}}
     >

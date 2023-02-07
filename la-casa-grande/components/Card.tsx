@@ -21,7 +21,7 @@ export default function Card({ name, price, people, image, link }: HouseInfo) {
       href={link}
       direction={"column"}
       minHeight={"400px"}
-      width={{ base: "110%", md: "80%" }}
+      width={{ base: "100%", md: "80%" }}
       minWidth={"40%"}
       bgImage={
         "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('" +
