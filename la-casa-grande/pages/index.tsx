@@ -28,9 +28,7 @@ export default function Home() {
         </Head>
 
         <Nav />
-        <Link href={"https://api.whatsapp.com/send?phone=34608431902"} zIndex={1} position={"fixed"} bottom={"5%"} right={"1%"} >
-          <Image src={whats.src} width={{base:"30px", md:"50px", xl:"100px"}} height={"auto"} />
-        </Link>
+        
         <Hero />
         <Flex maxWidth={"1800"} direction={"column"} alignSelf={"center"}>
           <Info />
