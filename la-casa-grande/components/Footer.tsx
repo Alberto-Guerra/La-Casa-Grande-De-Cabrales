@@ -14,17 +14,11 @@ export default function ActivityCard(){
             >
             © 2023 Alberto Guerra
             </Text>
-            <Flex 
-            direction={"column"}
-            gap={2}
-            fontSize={{base: "0.8em", md:"1em"}}>
-                <Text>
-                    Movil: 29031213
-                </Text>
-                <Text>
-                    Correo: monicapagabien@gmail.com
-                </Text>
-            </Flex>
+            
+            <Text fontSize={{base: "0.8em", md:"1em"}}> 
+                Contacto : 📱 662 372 928
+            </Text>
+                
         </Flex>
     )
 }

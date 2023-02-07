@@ -52,7 +52,7 @@ export default function Card({ name, price, people, image, link }: HouseInfo) {
         <Heading
           fontFamily={"Lato"}
           fontWeight={"extrabold"}
-          fontSize={"1.8rem"}
+          fontSize={{base: "1.3em", md : "2em"}}
         >
           {" "}
           {name}{" "}
