@@ -66,8 +66,9 @@ export default function Carousel({ cards }: carInfo) {
           position="absolute"
           left={side}
           top={top}
-          zIndex={2}
-          _hover={{ bgColor: "#192E23", color: "#FFFFFF" }}
+          zIndex={1}
+          transition={"transform .2s"}
+          _hover={{transform:"scale(1.1)"}}
           onClick={() => slider?.slickPrev()}
         >
           <BiLeftArrowAlt />
@@ -83,7 +84,8 @@ export default function Carousel({ cards }: carInfo) {
           right={side}
           top={top}
           zIndex={1}
-          _hover={{ bgColor: "#192E23", color: "#FFFFFF" }}
+          transition={"transform .2s"}
+          _hover={{transform:"scale(1.1)"}}
           onClick={() => slider?.slickNext()}
         >
           <BiRightArrowAlt />

@@ -44,9 +44,9 @@ export default function Home() {
             padding={"5"}
             paddingTop={"10"}
             gap={"20"}
-            alignItems={{ base: "center", xl: "start" }}
+            alignItems={{ base: "center", lg: "start" }}
             justifyContent={"space-evenly"}
-            direction={{ base: "column", xl: "row" }}
+            direction={{ base: "column", lg: "row" }}
           >
             <Card
               name={"LA CASA GRANDE 1"}
@@ -63,7 +63,7 @@ export default function Home() {
               people={6}
               link={""}
               image={
-                casa2.src
+                casa1.src
               }
             />
           </Flex>
@@ -80,9 +80,9 @@ export default function Home() {
             padding={"5"}
             paddingTop={"10"}
             gap={"20"}
-            alignItems={{ base: "center", xl: "start" }}
+            alignItems={{ base: "center", lg: "start" }}
             justifyContent={"space-evenly"}
-            direction={{ base: "column", xl: "row" }}
+            direction={{ base: "column", lg: "row" }}
           >
             <ActivityCard
               name={"ENTORNO"}
@@ -107,7 +107,7 @@ export default function Home() {
           </Flex>
         </Box>
         </Flex>
-        <Footer />
+        <Footer/>
         
       </Flex>
     </>

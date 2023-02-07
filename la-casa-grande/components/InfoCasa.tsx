@@ -85,6 +85,7 @@ export default function InfoCasa({
             color={"white"}
             height={50}
             fontSize={"xl"}
+            _hover={{bgColor: "#192E23"}}
             
           >
             Disponibilidad

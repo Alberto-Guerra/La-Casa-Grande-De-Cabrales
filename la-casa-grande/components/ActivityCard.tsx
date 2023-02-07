@@ -31,6 +31,8 @@ export default function ActivityCard({
       alignItems={"center"}
       bgColor={"#F8F8F8"}
       boxShadow={" 0px 6px 6px 0px rgba(0, 0, 0, 0.5)"}
+      transition={"transform .2s"}
+      _hover={{transform:"scale(1.05)"}}
     >
       <Heading
         paddingTop={"2"}

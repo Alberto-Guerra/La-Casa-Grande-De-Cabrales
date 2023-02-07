@@ -1,6 +1,15 @@
-import { Flex, Box, Text, Image, Heading, Highlight } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Text,
+  Image,
+  Heading,
+  Highlight,
+  AspectRatio,
+} from "@chakra-ui/react";
 import { start } from "repl";
 import internal from "stream";
+import { transform } from "typescript";
 
 interface HouseInfo {
   name: string;
@@ -16,32 +25,55 @@ interface HouseInfo {
 
 export default function Card({ name, price, people, image, link }: HouseInfo) {
   return (
-    <Flex
+    <AspectRatio
+      ratio={16 / 9}
+      height={"auto"}
+      width={{ base: "100%", lg: "80%" }}
       as={"a"}
       href={link}
-      direction={"column"}
-      minHeight={"400px"}
-      width={{ base: "100%", md: "80%" }}
-      minWidth={"40%"}
-      bgImage={
-        "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('" +
-        image +
-        "')"
-      }
-      backgroundSize={"cover"}
-      color={"white"}
-      justifyContent={"end"}
-      alignItems={"start"}
-      padding={"10"}
-      gap={"2"}
-      boxShadow={" 0px 6px 6px 0px rgba(0, 0, 0, 0.5)"}
+      transition={"transform .2s"}
+      _hover={{transform:"scale(1.05)"}}
     >
-      <Heading fontFamily={"Lato"} fontWeight={"extrabold"}
-            fontSize={"2em"}> {name} </Heading>
-      <Text fontFamily={"Lato"} fontWeight={"light"}
-            fontSize={"1.3em"}> Desde <Text as={"span"} fontWeight={"bold"} >{price}€</Text> / día </Text>
-      <Text fontFamily={"Lato"}fontWeight={"light"}
-            fontSize={"1.3em"} > Hasta <Text as={"span"} fontWeight={"bold"} >{people}</Text> personas</Text>
-    </Flex>
+      <Flex
+        direction={"column"}
+        bgImage={
+          "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('" +
+          image +
+          "')"
+        }
+        backgroundSize={"cover"}
+        color={"white"}
+        
+        alignItems={"start"}
+        padding={"10"}
+        gap={"2"}
+        boxShadow={" 0px 6px 6px 0px rgba(0, 0, 0, 0.5)"}
+      >
+        <Heading
+          fontFamily={"Lato"}
+          fontWeight={"extrabold"}
+          fontSize={"1.8rem"}
+        >
+          {" "}
+          {name}{" "}
+        </Heading>
+        <Text fontFamily={"Lato"} fontWeight={"light"} fontSize={"1.3rem"}>
+          {" "}
+          Desde{" "}
+          <Text as={"span"} fontWeight={"bold"}>
+            {price}€
+          </Text>{" "}
+          / día{" "}
+        </Text>
+        <Text fontFamily={"Lato"} fontWeight={"light"} fontSize={"1.3rem"}>
+          {" "}
+          Hasta{" "}
+          <Text as={"span"} fontWeight={"bold"}>
+            {people}
+          </Text>{" "}
+          personas
+        </Text>
+      </Flex>
+    </AspectRatio>
   );
 }

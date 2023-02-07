@@ -257,6 +257,10 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
+    label: "Casas",
+    href: "/#casas",
+  },
+  {
     label: "Entorno",
     href: "/entorno",
   },
@@ -264,8 +268,5 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Actividades",
     href: "/actividades",
   },
-  {
-    label: "Reservar",
-    href: "#",
-  },
+  
 ];
