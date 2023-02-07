@@ -26,7 +26,7 @@ interface HouseInfo {
 export default function Card({ name, price, people, image, link }: HouseInfo) {
   return (
     <AspectRatio
-      ratio={16 / 9}
+      ratio={16 / 12}
       height={"auto"}
       width={{ base: "100%", lg: "80%" }}
       as={"a"}
