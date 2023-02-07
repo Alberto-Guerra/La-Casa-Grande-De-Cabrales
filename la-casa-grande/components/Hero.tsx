@@ -51,6 +51,9 @@ export default function WithBackgroundImage() {
           </Text>
           <Stack>
             <Button
+              as={"a"}
+              href={"#casas"}
+              
               alignSelf={"center"}
               bg={"#192E23"}
               rounded={"full"}

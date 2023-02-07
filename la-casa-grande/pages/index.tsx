@@ -16,7 +16,7 @@ import casa2 from "../public/images/casa2.jpg"
 export default function Home() {
   return (
     <>
-      <Flex bgColor={"#F2F2F2"} direction={"column"} >
+      <Flex bgColor={"#F2F2F2"} direction={"column"} scrollBehavior={"smooth"}>
         
         <Head>
           <title>Create Next App</title>
@@ -28,8 +28,11 @@ export default function Home() {
         <Hero />
         <Flex maxWidth={"1800"} direction={"column"} alignSelf={"center"}>
         <Info />
-        <Box textAlign={"center"}>
+        <Box textAlign={"center"} >
           <Text
+            id="casas"
+            scrollMarginTop={"100px"}
+            
             color="#192E23"
             fontFamily="Lato"
             fontWeight={"extrabold"}

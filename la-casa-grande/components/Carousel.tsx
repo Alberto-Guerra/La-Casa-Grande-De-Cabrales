@@ -33,10 +33,12 @@ export default function Carousel({ cards }: carInfo) {
   // change the state
   const [slider, setSlider] = React.useState<Slider | null>(null);
 
+  
+
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = {base: "10%", md: "25%"}
-  const side = {base: "10px",md: "5%", xl: "20%"}
+  const top = {base: "10%", md: "15%", xl: "25%"}
+  const side = {base: "10px",md: "15%", xl: "20%"}
 
 
   return (
@@ -64,7 +66,6 @@ export default function Carousel({ cards }: carInfo) {
           position="absolute"
           left={side}
           top={top}
-          transform={"translate(0%, -50%)"}
           zIndex={2}
           _hover={{ bgColor: "#192E23", color: "#FFFFFF" }}
           onClick={() => slider?.slickPrev()}
@@ -81,7 +82,6 @@ export default function Carousel({ cards }: carInfo) {
           position="absolute"
           right={side}
           top={top}
-          transform={"translate(0%, -50%)"}
           zIndex={1}
           _hover={{ bgColor: "#192E23", color: "#FFFFFF" }}
           onClick={() => slider?.slickNext()}

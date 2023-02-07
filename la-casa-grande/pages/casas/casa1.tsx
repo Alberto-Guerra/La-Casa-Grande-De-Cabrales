@@ -2,6 +2,7 @@ import { Flex, Box } from "@chakra-ui/react";
 import Carousel from "../../components/Carousel";
 import Nav from "../../components/Nav";
 import InfoCasa from "../../components/InfoCasa";
+import Footer from "@/components/Footer"
 
 import pic1 from "../../public/images/casa.jpg";
 import pic2 from "../../public/images/casa1-1.jpeg";
@@ -20,6 +21,7 @@ export default function casa1() {
         alignItems={"center"}
         justifyContent="center"
         bgColor={"#F2F2F2"}
+        marginBottom={"20px"}
       >
         <Box width={"full"} maxWidth={"1000px"}>
           <Carousel cards={cardsCasa1} />
@@ -47,6 +49,7 @@ export default function casa1() {
           </Box>
         </Flex>
       </Flex>
+      <Footer  />
     </>
   );
 }
