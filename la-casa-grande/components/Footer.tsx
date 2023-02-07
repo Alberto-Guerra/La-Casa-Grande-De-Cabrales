@@ -9,6 +9,7 @@ export default function ActivityCard(){
         justifyContent={"space-evenly"}
         alignItems={"center"}
         color={"#F2F2F2"}
+        fontSize={"0.9em"}
         >
             <Text
             >
@@ -16,7 +17,7 @@ export default function ActivityCard(){
             </Text>
             
             <Text > 
-                Contacto : 📱 662 372 928
+                Contacto : 662 372 928
             </Text>
                 
         </Flex>
