@@ -15,7 +15,7 @@ export default function ActivityCard(){
             © 2023 Alberto Guerra
             </Text>
             
-            <Text fontSize={{base: "0.8em", md:"1em"}}> 
+            <Text > 
                 Contacto : 📱 662 372 928
             </Text>
                 
